@@ -20,7 +20,7 @@ export const placeOrder = createAsyncThunk(
                 },
             };
             const { data } = await axios.post(
-                "http://localhost:5002/customers/order",
+                "https://way4arts.onrender.com/customers/order",
                 { artId, artistId, customerName, customerId, customerPhone, customerAddress },
                 config
             );
@@ -43,7 +43,7 @@ export const fetchCustomerOrders = createAsyncThunk(
                     Authorization: `Bearer ${token}`,
                 },
             };
-            const { data } = await axios.get("http://localhost:5002/customers/orders", config);
+            const { data } = await axios.get("https://way4arts.onrender.com/customers/orders", config);
             return data;
         } catch (error) {
             return thunkAPI.rejectWithValue(error?.response?.data?.message);
@@ -63,7 +63,7 @@ export const fetchArtistOrders = createAsyncThunk(
                     Authorization: `Bearer ${token}`,
                 },
             };
-            const { data } = await axios.get("http://localhost:5002/artist/orders", config);
+            const { data } = await axios.get("https://way4arts.onrender.com/artist/orders", config);
             return data;
         } catch (error) {
             return thunkAPI.rejectWithValue(error?.response?.data?.message);
@@ -84,7 +84,7 @@ export const updateOrderStatus = createAsyncThunk(
                 },
             };
             const { data } = await axios.put(
-                `http://localhost:5002/artist/order/status`,  // Correct API endpoint
+                `https://way4arts.onrender.com/artist/order/status`,  // Correct API endpoint
                 { orderId, status },  // Pass orderId along with status
                 config
             );

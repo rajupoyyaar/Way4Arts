@@ -19,7 +19,7 @@ export const uploadArt = createAsyncThunk(
                 },
             };
             const { data } = await axios.post(
-                'http://localhost:5002/art/upload',
+                'https://way4arts.onrender.com/art/upload',
                 { category, price, art },
                 config
             );
@@ -39,7 +39,7 @@ export const fetchArt = createAsyncThunk(
                     "Content-Type": "application/json"
                 }
             }
-            const {data} = await axios.get('http://localhost:5002/art/paintings', config)
+            const {data} = await axios.get('https://way4arts.onrender.com/art/paintings', config)
             console.log(data)
             return data
         }

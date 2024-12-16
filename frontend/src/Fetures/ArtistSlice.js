@@ -15,7 +15,7 @@ export const registerArtist = createAsyncThunk(
                     "Content-Type" : "application/json"
                 }
             }
-            const {data} = await axios.post('http://localhost:5002/artist/register',
+            const {data} = await axios.post('https://way4arts.onrender.com/artist/register',
                 {
                     name,email,phone,password,profile
                 },
@@ -40,7 +40,7 @@ export const artistLogin = createAsyncThunk(
                     "Content-Type" : "application/json"
                 }
             }
-            const {data} = await axios.post('http://localhost:5002/artist/login',
+            const {data} = await axios.post('https://way4arts.onrender.com/artist/login',
                 {email,password},
                  config
                 )

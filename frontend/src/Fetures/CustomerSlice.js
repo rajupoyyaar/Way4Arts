@@ -17,7 +17,7 @@ export const registerCustomer = createAsyncThunk(
                 },
             };
             const { data } = await axios.post(
-                "http://localhost:5002/customers/register",
+                "https://way4arts.onrender.com/customers/register",
                 { name, email, password, phone },
                 config
             );
@@ -39,7 +39,7 @@ export const loginCustomer = createAsyncThunk(
                 },
             };
             const { data } = await axios.post(
-                "http://localhost:5002/customers/login",
+                "https://way4arts.onrender.com/customers/login",
                 { email, password },
                 config
             );
