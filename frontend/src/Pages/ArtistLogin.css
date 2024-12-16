@@ -1,0 +1,12 @@
+.login-container{
+    max-width: 85%;
+    margin-top: 20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media only screen and (max-width: 500px){
+    .login-container{
+        width: 95%;
+    }
+}

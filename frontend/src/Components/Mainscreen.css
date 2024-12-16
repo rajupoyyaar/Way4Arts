@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+
+.main-container-heading {
+  font-size: 60px;
+  font-weight: 0.5px;
+  font-family: 'Work Sans', sans-serif;
+  font-style:oblique;
+}
+
+
+.heading-hr {
+  margin-top: 5px;
+  border: none;
+  border-top: 2px solid #ccc; /* Adjust thickness and color as needed */
+  width: 100%; /* Matches the width of the heading */
+}
+
+@media only screen and (max-width: 500px) {
+  .main-container-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+}

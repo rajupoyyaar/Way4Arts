@@ -1,0 +1,20 @@
+.artist-registration{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register-container{
+ max-width: 85%;
+ padding-left: 2rem;
+ padding-right: 2rem;
+}
+
+@media only screen and (max-width: 500px){
+   .register-container{
+    width: 100%;
+   }
+   .artist-registration{
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+}

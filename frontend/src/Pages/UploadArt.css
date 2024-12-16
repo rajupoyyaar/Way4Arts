@@ -1,0 +1,17 @@
+.upload-art-container{
+    max-width: 100%;
+}
+
+.upload-art{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 500px){
+    .upload-art{
+        width: 90%;
+    } 
+}
