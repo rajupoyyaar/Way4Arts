@@ -12,7 +12,7 @@ const CustomerLogin = () => {
 
   useEffect(()=>{
     if(customer){
-        navigate("/")
+        navigate("/track-orders")
     }
   },[customer, navigate])
 

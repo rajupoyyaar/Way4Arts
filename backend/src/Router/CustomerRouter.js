@@ -5,10 +5,10 @@ const { placeOrder, fetchCustomerOrders } = require('../Controller/OrderControll
 
 const router = express.Router()
 
-router.post('/register', registerCustomer)
-router.post('/login', loginCustomer)
+router.route('/register').post(registerCustomer)
+router.route('/login').post(loginCustomer)
 
-router.post('/order', protectCustomer, placeOrder)
+router.route('/order').post(protectCustomer, placeOrder)
 router.get('/orders', protectCustomer, fetchCustomerOrders)
 
 module.exports = router
